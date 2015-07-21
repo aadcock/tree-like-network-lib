@@ -10,7 +10,7 @@
 */
 
 #include "../graph_lib_boost.hpp"
-#include "tree_lib_boost.hpp"
+#include "../tree_lib_boost.hpp"
 
 using namespace boost;
 

@@ -10,7 +10,7 @@
   Stanford University 2014
  */
 
-#include "graph_lib_boost.hpp"
+#include "../lib/graph_lib_boost.hpp"
 #include <cmath>
 
 int main(int argc, char *argv[])
@@ -85,10 +85,10 @@ int main(int argc, char *argv[])
       Vert curr = *vi;
       size_t j  = index[curr];
       vector<unsigned long> distances = G[curr].distances;
-      for (int i = 0; i < distances.size(); ++i)
+      for (size_t i = 0; i < distances.size(); ++i)
 	{
 	  int oracle_dist = (int) oracle.query(j, i);
-	  int real_dist = (int) distances[i];
+	  size_t real_dist = (size_t) distances[i];
 	  
 	  double abs_error;
 	  abs_error = abs(real_dist - oracle_dist);
@@ -99,7 +99,7 @@ int main(int argc, char *argv[])
 	  if (real_dist > absolute_error.size())
 	    {
 	      size_t over = real_dist - absolute_error.size();
-	      for (int k = 0; k < over; ++k)
+	      for (size_t k = 0; k < over; ++k)
 		{
 		  absolute_error.push_back(0);
 		  num_pairs.push_back(0);
@@ -114,7 +114,7 @@ int main(int argc, char *argv[])
 	}
     }
 
-  for (int i = 0; i < absolute_error.size(); ++i)
+  for (size_t i = 0; i < absolute_error.size(); ++i)
     {
       if (num_pairs[i] != 0)
 	absolute_error[i] = absolute_error[i] / num_pairs[i];

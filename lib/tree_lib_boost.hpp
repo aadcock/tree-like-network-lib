@@ -78,7 +78,7 @@ vector<size_t> TreeDecomp::get_bag_sizes()
   vector<size_t> bag_sizes;
   bag_sizes.reserve(num_bags);
 
-  for (int i = 0; i < num_bags; ++i)
+  for (size_t i = 0; i < num_bags; ++i)
     bag_sizes.push_back((bags[i]).size());
     
   return bag_sizes;

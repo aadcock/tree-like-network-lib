@@ -18,7 +18,7 @@ Executable options:
 -s if y, suppresses terminal output...default = false
 */
 
-#include "graph_lib_boost.hpp"
+#include "../lib/graph_lib_boost.hpp"
 #include <ctime>
 #include <sys/stat.h>
 #include <sys/types.h>
