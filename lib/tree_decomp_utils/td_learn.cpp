@@ -10,7 +10,7 @@
   2013
  */
 
-#include "tree_lib_boost.hpp"
+#include "../tree_lib_boost.hpp"
 #include "../graph_lib_boost.hpp"
 
 /* Given bags_to_keep, it produces a modified vertex_location list which removes 

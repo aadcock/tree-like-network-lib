@@ -16,8 +16,8 @@
   PhD Candidate Stanford University
   2014
  */
-#include "graph_lib_boost.hpp"
-#include "tree_lib_boost.hpp"
+#include "../lib/graph_lib_boost.hpp"
+#include "../lib/tree_lib_boost.hpp"
 #include <set>
 
 template <class T>

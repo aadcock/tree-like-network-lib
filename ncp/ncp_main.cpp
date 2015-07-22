@@ -7,8 +7,8 @@
   Oct. 2011 
 */
 
-#include "graph_lib_boost.hpp"
-#include "tree_lib_boost.hpp"
+#include "../lib/graph_lib_boost.hpp"
+#include "../lib/tree_lib_boost.hpp"
 #include <fstream>
 #include <cstdlib>
 #include <stdio.h>

@@ -7,7 +7,7 @@ By Aaron Adcock, PhD candidate at Stanford University
 Oct. 2011 (modified May 2014)
 */
 
-#include "graph_lib_boost.hpp"
+#include "../lib/graph_lib_boost.hpp"
 #include <fstream>
 #include <cstdlib>
 #include <ctime>
